@@ -30,3 +30,16 @@ const gracefulShutdown = () => {
 process.on('SIGINT', gracefulShutdown);
 process.on('SIGTERM', gracefulShutdown);
 process.on('SIGUSR2', gracefulShutdown); // Sent by nodemon
+
+document.addEventListener('DOMContentLoaded', function() {
+    const h1Element = document.getElementById('bounce');
+    
+    // Add a click event listener to the h1 element
+    h1Element.addEventListener('click', function() {
+        // Toggle the 'bounce' class to restart the animation
+        h1Element.classList.remove('bounce');
+        void h1Element.offsetWidth; // Trigger reflow to restart the animation
+        h1Element.classList.add('bounce');
+    });
+});
+
