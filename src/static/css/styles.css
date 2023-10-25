@@ -63,29 +63,3 @@ button:focus {
     cursor: pointer; /* Change cursor to a pointer to indicate interactivity */
 }
 
-/* Quote cycling animation */
-#quote-container {
-  list-style-type: none;
-  padding: 0;
-  text-align: center; /* Center the quotes horizontally */
-}
-
-#quote-container li {
-  display: none; /* Hide all quotes initially */
-  font-size: 20px;
-  padding: 10px;
-  background-color: #fff;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 1em #ccc;
-  animation: quoteAnimation 10s linear infinite; /* Change the quote every 10 seconds */
-}
-
-@keyframes quoteAnimation {
-  0%, 20%, 40%, 60%, 80%, 100% {
-    display: none; /* Hide all quotes during animation */
-  }
-  5%, 25%, 45%, 65%, 85% {
-    display: block; /* Show quotes during animation */
-  }
-}
