@@ -4,6 +4,12 @@ body {
     font-family: 'Lato';
 }
 
+h1 {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 50px;   /* Add margin at the top for spacing */
+}
+
+
 .item {
     background-color: white;
     padding: 15px;
