@@ -63,13 +63,7 @@ button:focus {
     cursor: pointer; /* Change cursor to a pointer to indicate interactivity */
 }
 
-<ol id="quote-container">
-  <li>Quote 1: Your first quote here.</li>
-  <li>Quote 2: Another inspiring quote.</li>
-  <li>Quote 3: Keep changing your quotes!</li>
-  <li>Quote 4: This is the fourth quote.</li>
-  <li>Quote 5: The final quote for now.</li>
-</ol>
+
 
 /* Your existing CSS styles go here */
 
