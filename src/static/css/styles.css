@@ -63,3 +63,12 @@ button:focus {
     cursor: pointer; /* Change cursor to a pointer to indicate interactivity */
 }
 
+#quote {
+    text-align: center; /* Center text horizontally */
+    position: absolute;
+    top: 50%; /* Move element down by 50% of the parent's height */
+    left: 50%; /* Move element right by 50% of the parent's width */
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+
