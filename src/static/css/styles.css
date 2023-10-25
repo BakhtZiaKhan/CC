@@ -1,3 +1,5 @@
+/* Your existing CSS styles go here */
+
 body {
     background-color: #ADD8E6; /* Light blue background color */
     margin-top: 50px;
@@ -8,7 +10,6 @@ h1 {
     text-align: center; /* Center the text horizontally */
     margin-top: 50px;   /* Add margin at the top for spacing */
 }
-
 
 .item {
     background-color: white;
@@ -44,8 +45,7 @@ button:focus {
     border: 1px solid #333;
 }
 
-
-/* Add the bounce animation */
+/* Bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -63,8 +63,7 @@ button:focus {
     cursor: pointer; /* Change cursor to a pointer to indicate interactivity */
 }
 
-/* Your existing CSS styles go here */
-
+/* Quote cycling animation */
 #quote-container {
   list-style-type: none;
   padding: 0;
@@ -90,5 +89,3 @@ button:focus {
     display: block; /* Show quotes during animation */
   }
 }
-
-
