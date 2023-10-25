@@ -17,10 +17,29 @@
     <script src="js/react-bootstrap.js"></script>
     <script src="js/babel.min.js"></script>
     <script type="text/babel" src="js/app.js"></script>
+ <h2 id="quote">Quote</h1>
+   
+    <script>
+        // Array of 5 quotes
+        const quotes = [
+            "Quote 1",
+            "Quote 2",
+            "Quote 3",
+            "Quote 4",
+            "Quote 5"
+        ];
 
+        // Function to cycle through quotes
+        let currentQuoteIndex = 0;
+        function cycleQuotes() {
+            const quoteElement = document.getElementById("quote");
+            quoteElement.textContent = quotes[currentQuoteIndex];
+            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+        }
 
-
-
+        // Call the cycleQuotes function every 5 seconds (5000 milliseconds)
+        setInterval(cycleQuotes, 5000);
+    </script>
 </body>
 </html>
 
