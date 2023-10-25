@@ -1,12 +1,7 @@
 body {
-    background: linear-gradient(to bottom, #ADD8E6, #f4f4f4);
+    background-color: #ADD8E6; /* Light blue background color */
     margin-top: 50px;
-    font-family: 'Rainbow', sans-serif;
-    background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Lato';
 }
 
 .item {
