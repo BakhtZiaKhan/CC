@@ -1,80 +1,45 @@
-/* Styles for the body and h1 */
 body {
-    background-color: #ADD8E6;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
+    background-color: #ADD8E6; /* Light blue background color */
+    margin-top: 50px;
+    font-family: 'Lato';
 }
 
 h1 {
-    margin-top: 20px;
-    font-size: 2rem;
-    color: #333; /* Dark gray text color */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 50px;   /* Add margin at the top for spacing */
 }
 
-/* Styles for the To-Do List items */
+
 .item {
     background-color: white;
     padding: 15px;
-    margin: 10px 20px; /* Spacing around items */
-    border: 2px solid #ADD8E6; /* Light blue border */
+    margin-bottom: 15px;
+    border: transparent;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    box-shadow: 0 0 1em #ccc;
     transition: all .2s ease-in-out;
 }
 
 .item:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+    box-shadow: 0 0 1em #aaa;
 }
 
 .item.completed {
     text-decoration: line-through;
 }
 
-/* Styles for the toggle and remove buttons */
 .toggles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: black;
 }
 
-.toggles button {
-    background-color: #ADD8E6;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.toggles button:hover {
-    background-color: #0080FF; /* Darker blue on hover */
+.name {
+    padding-top: 3px;
 }
 
 .remove {
     padding-left: 0;
 }
 
-/* Your existing CSS styles go here */
-
-/* Add the bounce animation */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
+button:focus {
+    border: 1px solid #333;
 }
-
-#bounce {
-    animation: bounce 2s infinite; /* Bounce animation for 2 seconds infinitely */
-    cursor: pointer; /* Change cursor to a pointer to indicate interactivity */
-}
-
-
